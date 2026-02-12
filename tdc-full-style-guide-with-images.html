@@ -1,0 +1,172 @@
+<!-- YOUR EXISTING STYLE GUIDE HTML GOES HERE -->
+
+<!-- =======================================
+     IMAGES + LOGO USAGE SECTION (TO BE INTEGRATED BELOW YOUR CONTENT)
+     ======================================= -->
+
+<!-- This section will contain:
+ - Main logo with size variants (profile/cover previews)
+ - Social/app logo in circle with label
+ - Abstract logo in mock Reddit/Pinterest contexts
+ - Section breaks as backgrounds with overlay examples
+ - Uniform cards carousel (tech workplace pics)
+ - AI prompt generator with dropdown + textarea
+-->
+
+<!-- We'll now generate this next as a full HTML block to append to your existing style guide. -->
+
+<!-- =======================================
+     LOGO + IMAGE USAGE SHOWCASE
+     ======================================= -->
+<section id="images" class="container">
+  <h2>Image & Logo Usage</h2>
+
+  <!-- LOGO USAGE: Display full-res and scaled previews -->
+  <h3>Main Logo Variants</h3>
+  <p>The main logo is used across web, print, and social media platforms. Maintain original resolution, colour, and spacing.</p>
+  <div style="display:flex; flex-wrap:wrap; gap:2rem; align-items:flex-end; margin-bottom:2rem;">
+    <div style="text-align:center;">
+      <img src="./tdcreative-images/LOGO.png" alt="Main logo full" style="width:200px;">
+      <div class="swatch-label">Full Logo – Original Resolution</div>
+    </div>
+    <div style="text-align:center;">
+      <img src="./tdcreative-images/LOGO.png" alt="Logo profile small" style="width:80px;">
+      <div class="swatch-label">Small Profile (LinkedIn, X)</div>
+    </div>
+    <div style="text-align:center;">
+      <img src="./tdcreative-images/LOGO.png" alt="Logo for cover" style="width:160px;">
+      <div class="swatch-label">Cover Format (Facebook, TikTok)</div>
+    </div>
+  </div>
+
+  <!-- Social/App Icon Logo -->
+  <h3>Social App / Icon Format</h3>
+  <div style="display:flex; align-items:center; gap:2rem;">
+    <div style="width:90px; height:90px; background:white; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+      <img src="./tdcreative-images/LOGO-03-ROUND.png" alt="App Icon Logo" style="width:60px;">
+    </div>
+    <div>
+      <p>Use this icon in app circles, social media avatars, and places where a square or round icon is required.</p>
+    </div>
+  </div>
+
+  <!-- Abstract logo usage -->
+  <h3>Abstract Logo (Personal/Comments)</h3>
+  <div style="display:flex; align-items:center; gap:2rem; margin-top:1rem;">
+    <img src="./tdcreative-images/LOGO-02-ABSTRACT.PNG" alt="Abstract logo" style="width:64px;">
+    <p>This abstract logo is used for user accounts, comments, or identity representation on platforms like Reddit, Pinterest or custom accounts branded under TD Creative.</p>
+  </div>
+</section>
+
+<!-- =======================================
+     RESPONSIVE CARD CAROUSEL (IMAGES + TEXT)
+     ======================================= -->
+<section id="cards" class="container">
+  <h2>Responsive Card Carousel</h2>
+  <div class="carousel">
+    <div class="carousel-track">
+      <!-- Repeat cards here -->
+      <div class="card">
+        <img src="./tdcreative-images/CARD00001.png" alt="Tech workplace 1">
+        <div class="card-content">
+          <h3>Smart SEO</h3>
+          <p>Optimised search for your brand's visibility.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./tdcreative-images/CARD00003.png" alt="Tech workplace 2">
+        <div class="card-content">
+          <h3>Web Presence</h3>
+          <p>Modern, scalable websites built to convert.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./tdcreative-images/CARD00004.png" alt="Tech workplace 3">
+        <div class="card-content">
+          <h3>Creative Ads</h3>
+          <p>Capture attention with design and strategy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Carousel CSS -->
+<style>
+.carousel {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  scroll-snap-align: start;
+}
+.card {
+  background: rgba(255,255,255,0.96);
+  min-width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card-content {
+  padding: 1rem;
+  color: var(--charcoal);
+}
+.card-content h3 {
+  color: var(--purple);
+  margin-bottom: 0.5rem;
+}
+</style>
+
+<!-- =======================================
+     SECTION BACKGROUND USAGE
+     ======================================= -->
+<section id="section-uses" class="container">
+  <h2>Section Backgrounds In-Use</h2>
+  <p>Each section background is intended for use in navigation, hero headers or section breaks, with layered content on top.</p>
+  <div style="margin:2rem 0;">
+    <div style="background-image:url('./tdcreative-images/SECTIONBG00001.png'); background-size:cover; padding:3rem 2rem; border-radius:18px;">
+      <h3 style="color:white; text-shadow:1px 1px 6px black;">Overlay Example</h3>
+      <p style="color:white; text-shadow:1px 1px 5px black;">This is a demo of text placed over a swirl-style background image used as a site section background.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =======================================
+     AI PROMPT DROPDOWN
+     ======================================= -->
+<section id="ai-prompts" class="container">
+  <h2>AI Prompt Helper</h2>
+  <label for="prompt-select">Select Prompt Type:</label>
+  <select id="prompt-select" onchange="populatePrompt()">
+    <option value="">-- Choose one --</option>
+    <option value="bg">Background Swirls</option>
+    <option value="real">Real-Life Aesthetic</option>
+    <option value="vibe">Vibe Keywords</option>
+    <option value="colours">Colour Patterns</option>
+    <option value="tone">Tone & Brand Summary</option>
+  </select>
+  <textarea id="prompt-box" rows="6" style="width:100%;margin-top:1rem;"></textarea>
+</section>
+
+<script>
+function populatePrompt() {
+  const prompts = {
+    bg: "Background with orange-pink-purple swirl, 16:9 aspect ratio, subtle gradient, clean modern design, suitable for nav or header.",
+    real: "Team collaborating in a Perth-based creative agency, natural daylight, relaxed professional atmosphere, branded wall, tech setup.",
+    vibe: "Authentic, local, bright, bold, honest, friendly, no fluff, no hard sell. Designed to feel confident and creative.",
+    colours: "Primary: #EDA773, #E1746C, #9A537A. Secondary: #000000, #F5F0E8, #FFFFFF. Use gradients for accents.",
+    tone: "Voice is direct, confident, friendly. Tone is supportive and professional. Mixes Aussie plain-speak with expert insight."
+  };
+  const val = document.getElementById("prompt-select").value;
+  document.getElementById("prompt-box").value = prompts[val] || "";
+}
+</script>
