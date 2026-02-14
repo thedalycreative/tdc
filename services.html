@@ -1,261 +1,502 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- ===== >>> DOCUMENT ENCODING >>> ===== -->
+		<!--===== HEAD TAGS =====-->
 		<meta charset="UTF-8" />
-		<!-- ===== >>> RESPONSIVE VIEWPORT >>> ===== -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- ===== >>> PAGE TITLE >>> ===== -->
-		<title>The Daly Creative | Creative Strategy Meets Smart Automation</title>
-		<!-- ===== >>> META DESCRIPTION >>> ===== -->
+		<!--Page Title-->
+		<title>Services | The Daly Creative</title>
+		<!--Description-->
 		<meta
 			name="description"
 			content="We help brands grow through design, tech, and tools that think with you. Brand identity, web development, AI tools, and market research."
 		/>
-		<!-- ===== >>> FAVICON >>> ===== -->
-		<link rel="icon" type="image/png" href="logos/TDC Flavicon 2.png" />
-		<!-- ===== >>> ICONS STYLESHEET >>> ===== -->
+		<!--Favicon-->
+		<link rel="icon" type="image/png" href="/logos/tdc-icon 256x256.png" />
+		<!--Bootstrap Icons-->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
 		/>
-		<!-- ===== >>> MAIN STYLESHEET >>> ===== -->
+		<!--Main Stylesheet-->
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<!-- ===== >>> NAVIGATION >>> ===== -->
-		<nav>
-			<div class="nav-container">
-				<a href="#home" class="logo">
-					<img src="logos/TDC Dual Logo.png" alt="The Daly Creative" />
-				</a>
-				<ul class="nav-links">
-					<li><a href="#services">Services</a></li>
-					<li><a href="#ai-tools">AI Tools</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+		<!-- ===== NAV BAR ===== -->
+		<div id="navbar"></div>
 
-		<!-- ===================== >>> SERVICES SECTION >>> ===================== -->
-
-		<section id="services" class="services section">
-			<div class="container section-title" data-aos="fade-up">
-				<h2>Services</h2>
-				<p>Smart, cheap, and effective online success—all sorted. ;)</p>
+		<!-- ===== SERVICES HERO SECTION ===== -->
+		<section id="services" class="hero hero-half">
+			<div class="hero-content">
+				<h1>Our Services</h1>
+				<p>Smart, modern solutions designed to help your brand grow and scale.</p>
 			</div>
+		</section>
+
+		<!-- ===== SERVICE 1: CUSTOM WEBSITE DEVELOPMENT ===== -->
+		<section
+			id="service-web-dev"
+			class="service-detail-section"
+			data-color="#48c9b0"
+		>
 			<div class="container">
-				<div class="row gy-4">
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-						<div class="service-item item-cyan position-relative">
-							<div class="icon" style="background: #48c9b0; color: #fff">
-								<i class="bi bi-laptop"></i>
-							</div>
-							<h3>Custom Website Development</h3>
-							<p>
-								High-performance, mobile-responsive sites built on Bootstrap or
-								WordPress. Focus on clean code and local WA hosting for speed.
-							</p>
+				<div class="service-detail-content left-image">
+					<div class="service-detail-visual">
+						<div class="service-visual-placeholder animate-on-scroll">
+							<i class="bi bi-window" style="font-size: 14rem; color: #48c9b0"></i>
 						</div>
 					</div>
-
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-						<div class="service-item item-orange position-relative">
-							<div class="icon" style="background: #ff851b; color: #fff">
-								<i class="bi bi-palette"></i>
-							</div>
-							<h3>Strategic Branding & Identity</h3>
-							<p>
-								Visual identity beyond a logo. Cohesive color palettes and typography
-								that stand out in the Perth market.
-							</p>
-						</div>
+					<div class="service-detail-text">
+						<h2 style="color: #48c9b0">Custom Website Development</h2>
+						<p>
+							High-performance, mobile-responsive sites built to convert. We focus on
+							clean code, intuitive UX, and fast load times that keep visitors engaged.
+						</p>
+						<ul class="service-features" data-check-color="#48c9b0">
+							<li>Responsive Bootstrap & modern frameworks</li>
+							<li>SEO optimization built-in</li>
+							<li>Fast hosting & performance tuning</li>
+							<li>CMS setup for easy updates</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#48c9b0"
+							>Start Your Project</a
+						>
 					</div>
+				</div>
+			</div>
+		</section>
 
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-						<div class="service-item item-teal position-relative">
-							<div class="icon" style="background: #48c9b0; color: #fff">
-								<i class="bi bi-graph-up-arrow"></i>
-							</div>
-							<h3>Localized SEO Visibility</h3>
-							<p>
-								On-page and technical SEO designed to get you found by people in your
-								neighborhood. We optimize for local search results.
-							</p>
-						</div>
+		<!-- ===== SERVICE 2: STRATEGIC BRANDING & IDENTITY ===== -->
+		<section
+			id="service-branding"
+			class="service-detail-section"
+			data-color="#ff851b"
+		>
+			<div class="container">
+				<div class="service-detail-content right-image">
+					<div class="service-detail-text">
+						<h2 style="color: #ff851b">Strategic Branding & Identity</h2>
+						<p>
+							Your brand is more than a logo. We create cohesive visual identities that
+							stand out, communicate your values, and resonate with your audience.
+						</p>
+						<ul class="service-features" data-check-color="#ff851b">
+							<li>Logo & visual identity design</li>
+							<li>Color palettes & typography systems</li>
+							<li>Brand guidelines & messaging</li>
+							<li>Consistent brand voice across channels</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#ff851b"
+							>Define Your Brand</a
+						>
 					</div>
-
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-						<div class="service-item item-navy position-relative">
-							<div class="icon" style="background: #0d1b2a; color: #fff">
-								<i class="bi bi-shield-check"></i>
-							</div>
-							<h3>Grow & Support Plan</h3>
-							<p>
-								Priority access for updates, troubleshooting, and monthly check-ins. A
-								partner in your corner, not just a one-off dev.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-						<div class="service-item item-pink position-relative">
-							<div class="icon" style="background: #f1948a; color: #fff">
-								<i class="bi bi-person-video3"></i>
-							</div>
-							<h3>Build & Guide Training</h3>
-							<p>
-								Empowering you to manage your own dashboards with confidence.
-								Neurodivergent-friendly, step-by-step learning.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-						<div class="service-item item-orange position-relative">
-							<div class="icon" style="background: #ff851b; color: #fff">
-								<i class="bi bi-megaphone"></i>
-							</div>
-							<h3>Managed Ad Campaigns</h3>
-							<p>
-								Expert setup of Google and Facebook Ad accounts. We handle the technical
-								side so your budget is spent effectively.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
-						<div class="service-item item-navy position-relative">
-							<div class="icon" style="background: #0d1b2a; color: #fff">
-								<i class="bi bi-lightbulb"></i>
-							</div>
-							<h3>AI Strategy & Navigation</h3>
-							<p>
-								Cutting through the hype to find the specific tools that actually work.
-								Smart advice to help you navigate the digital landscape.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
-						<div class="service-item item-teal position-relative">
-							<div class="icon" style="background: #48c9b0; color: #fff">
-								<i class="bi bi-gear-wide-connected"></i>
-							</div>
-							<h3>Workflow Automation</h3>
-							<p>
-								Kill off the "busywork" with automated systems. Connecting your apps to
-								streamline your daily operations via AI agents.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
-						<div class="service-item item-pink position-relative">
-							<div class="icon" style="background: #f1948a; color: #fff">
-								<i class="bi bi-magic"></i>
-							</div>
-							<h3>AI Content Support</h3>
-							<p>
-								Stop staring at a blank page. Implement AI tools to maintain your brand
-								voice for blogs, captions, and high-impact copy.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1000">
-						<div class="service-item item-orange position-relative">
-							<div class="icon" style="background: #ff851b; color: #fff">
-								<i class="bi bi-bar-chart-line"></i>
-							</div>
-							<h3>Data Insights</h3>
-							<p>
-								Turning messy stats into clear moves. Data-informed marketing to see
-								what’s working and where your next customer is.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1100">
-						<div class="service-item item-navy position-relative">
-							<div class="icon" style="background: #0d1b2a; color: #fff">
-								<i class="bi bi-robot"></i>
-							</div>
-							<h3>Smart Chatbots</h3>
-							<p>
-								24/7 customer support that actually sounds like you. Custom bots for
-								FAQs and lead capture while you're offline.
-							</p>
-						</div>
-					</div>
-
-					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1200">
-						<div class="service-item item-teal position-relative">
-							<div class="icon" style="background: #48c9b0; color: #fff">
-								<i class="bi bi-rocket-takeoff"></i>
-							</div>
-							<h3>Future-Proofing</h3>
-							<p>
-								Big-picture advice for the long haul. Stay ahead of tech evolution and
-								marketing trends so you're never outdated.
-							</p>
+					<div class="service-detail-visual">
+						<div class="service-visual-placeholder animate-on-scroll">
+							<i class="bi bi-palette" style="font-size: 14rem; color: #ff851b"></i>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-   
-		<!-- ===================== <<< CONTACT SECTION <<< ===================== -->
-
-		<!-- ===== >>> FOOTER >>> ===== -->
-		<footer>
-			<div class="footer-content">
-				<div class="footer-section">
-					<h3>The Daly Creative</h3>
-					<p>
-						Creative strategy meets smart automation. We help brands grow through
-						design, tech, and tools that think with you.
-					</p>
-				</div>
-				<div class="footer-section">
-					<h3>Services</h3>
-					<ul>
-						<li><a href="#services">Brand Identity</a></li>
-						<li><a href="#services">Web Development</a></li>
-						<li><a href="#ai-tools">AI Business Tools</a></li>
-						<li><a href="#services">Market Research</a></li>
-					</ul>
-				</div>
-				<div class="footer-section">
-					<h3>Company</h3>
-					<ul>
-						<li><a href="#about">About Us</a></li>
-						<li><a href="#work">Our Work</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-				<div class="footer-section">
-					<h3>Connect</h3>
-					<ul>
-						<li><a href="#">LinkedIn</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Instagram</a></li>
-						<li>
-							<a href="mailto:hello@thedaly.creative">hello@thedaly.creative</a>
-						</li>
-					</ul>
+		<!-- ===== SERVICE 3: LOCALIZED SEO VISIBILITY ===== -->
+		<section id="service-seo" class="service-detail-section" data-color="#48c9b0">
+			<div class="container">
+				<div class="service-detail-content left-image">
+					<div class="service-detail-visual">
+						<div
+							class="service-visual-placeholder animate-on-scroll with-background"
+							style="background: linear-gradient(135deg, #48c9b0, #3ab39a)"
+						>
+							<i
+								class="bi bi-graph-up-arrow"
+								style="font-size: 14rem; color: white"
+							></i>
+						</div>
+					</div>
+					<div class="service-detail-text">
+						<h2 style="color: #48c9b0">Localized SEO Visibility</h2>
+						<p>
+							Get found by customers actively searching for your services. We optimize
+							your online presence for local search results to drive qualified traffic.
+						</p>
+						<ul class="service-features" data-check-color="#48c9b0">
+							<li>On-page & technical SEO</li>
+							<li>Local keyword research</li>
+							<li>Google Business optimization</li>
+							<li>Local link building</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#48c9b0"
+							>Boost Your Visibility</a
+						>
+					</div>
 				</div>
 			</div>
-			<div class="footer-bottom">
-				<p>&copy; 2026 The Daly Creative. All rights reserved.</p>
-			</div>
-		</footer>
-		<!-- ===== <<< FOOTER <<< ===== -->
+		</section>
 
-		<!-- ===== >>> SCRIPTS >>> ===== -->
+		<!-- ===== SERVICE 4: GROW & SUPPORT PLAN ===== -->
+		<section
+			id="service-support"
+			class="service-detail-section"
+			data-color="#0d1b2a"
+		>
+			<div class="container">
+				<div class="service-detail-content right-image">
+					<div class="service-detail-text">
+						<h2 style="color: #0d1b2a">Grow & Support Plan</h2>
+						<p>
+							We don't build and disappear. Our ongoing support plans keep your site
+							secure, updated, and optimized. We're your partner in growth.
+						</p>
+						<ul class="service-features" data-check-color="#0d1b2a">
+							<li>Monthly check-ins & optimization</li>
+							<li>Security updates & backups</li>
+							<li>Performance monitoring</li>
+							<li>Priority troubleshooting</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#0d1b2a"
+							>Get Protected</a
+						>
+					</div>
+					<div class="service-detail-visual">
+						<div
+							class="service-visual-placeholder animate-on-scroll with-background"
+							style="background: linear-gradient(135deg, #0d1b2a, #162739)"
+						>
+							<i class="bi bi-shield-check" style="font-size: 14rem; color: white"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SERVICE 5: TRAINING & EMPOWERMENT ===== -->
+		<section
+			id="service-training"
+			class="service-detail-section"
+			data-color="#f1948a"
+		>
+			<div class="container">
+				<div class="service-detail-content left-image">
+					<div class="service-detail-visual">
+						<div class="service-visual-placeholder animate-on-scroll">
+							<i
+								class="bi bi-person-video3"
+								style="font-size: 14rem; color: #f1948a"
+							></i>
+						</div>
+					</div>
+					<div class="service-detail-text">
+						<h2 style="color: #f1948a">Training & Empowerment</h2>
+						<p>
+							We teach you to fish. Step-by-step training that's
+							neurodivergent-friendly, so you can confidently manage your own
+							dashboards and tools.
+						</p>
+						<ul class="service-features" data-check-color="#f1948a">
+							<li>Customized training sessions</li>
+							<li>Clear documentation & guides</li>
+							<li>Accessible learning approach</li>
+							<li>Ongoing support access</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#f1948a"
+							>Learn & Grow</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SERVICE 6: MANAGED AD CAMPAIGNS ===== -->
+		<section id="service-ads" class="service-detail-section" data-color="#ff851b">
+			<div class="container">
+				<div class="service-detail-content right-image">
+					<div class="service-detail-text">
+						<h2 style="color: #ff851b">Managed Ad Campaigns</h2>
+						<p>
+							Maximize your ad spend with expert campaign management. We handle setup,
+							optimization, and reporting so your budget works harder.
+						</p>
+						<ul class="service-features" data-check-color="#ff851b">
+							<li>Google Ads & Facebook setup</li>
+							<li>Campaign strategy & targeting</li>
+							<li>Continuous optimization</li>
+							<li>Monthly performance reports</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#ff851b"
+							>Launch Campaigns</a
+						>
+					</div>
+					<div class="service-detail-visual">
+						<div class="service-visual-placeholder animate-on-scroll">
+							<i class="bi bi-megaphone" style="font-size: 14rem; color: #ff851b"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SERVICE 7: AI STRATEGY & NAVIGATION ===== -->
+		<section
+			id="service-ai-strategy"
+			class="service-detail-section"
+			data-color="#0d1b2a"
+		>
+			<div class="container">
+				<div class="service-detail-content left-image">
+					<div class="service-detail-visual">
+						<div
+							class="service-visual-placeholder animate-on-scroll with-background"
+							style="background: linear-gradient(135deg, #0d1b2a, #162739)"
+						>
+							<i class="bi bi-lightbulb" style="font-size: 14rem; color: white"></i>
+						</div>
+					</div>
+					<div class="service-detail-text">
+						<h2 style="color: #0d1b2a">AI Strategy & Navigation</h2>
+						<p>
+							Cut through the hype. We help you identify which AI tools actually work
+							for your business and build a realistic implementation plan.
+						</p>
+						<ul class="service-features" data-check-color="#0d1b2a">
+							<li>AI tool assessment & recommendations</li>
+							<li>Implementation roadmap</li>
+							<li>ROI analysis & tracking</li>
+							<li>Ongoing optimization</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#0d1b2a"
+							>Get AI Strategy</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SERVICE 8: WORKFLOW AUTOMATION ===== -->
+		<section
+			id="service-automation"
+			class="service-detail-section"
+			data-color="#48c9b0"
+		>
+			<div class="container">
+				<div class="service-detail-content right-image">
+					<div class="service-detail-text">
+						<h2 style="color: #48c9b0">Workflow Automation</h2>
+						<p>
+							Eliminate repetitive tasks with intelligent automation. We connect your
+							tools and build AI agents that streamline your daily operations.
+						</p>
+						<ul class="service-features" data-check-color="#48c9b0">
+							<li>Process automation with AI agents</li>
+							<li>App integration & data flow</li>
+							<li>Custom tool building</li>
+							<li>Continuous improvement</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#48c9b0"
+							>Automate Now</a
+						>
+					</div>
+					<div class="service-detail-visual">
+						<div
+							class="service-visual-placeholder animate-on-scroll with-background"
+							style="background: linear-gradient(135deg, #48c9b0, #3ab39a)"
+						>
+							<i
+								class="bi bi-gear-wide-connected"
+								style="font-size: 14rem; color: white"
+							></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SERVICE 9: AI CONTENT SUPPORT ===== -->
+		<section
+			id="service-content"
+			class="service-detail-section"
+			data-color="#f1948a"
+		>
+			<div class="container">
+				<div class="service-detail-content left-image">
+					<div class="service-detail-visual">
+						<div class="service-visual-placeholder animate-on-scroll">
+							<i class="bi bi-magic" style="font-size: 14rem; color: #f1948a"></i>
+						</div>
+					</div>
+					<div class="service-detail-text">
+						<h2 style="color: #f1948a">AI Content Support</h2>
+						<p>
+							Never face a blank page again. We help you leverage AI to create
+							consistent, brand-aligned content across blogs, social, and marketing
+							channels.
+						</p>
+						<ul class="service-features" data-check-color="#f1948a">
+							<li>AI writing tool setup</li>
+							<li>Brand voice templates</li>
+							<li>Content workflow automation</li>
+							<li>Quality assurance & optimization</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#f1948a"
+							>Create Content</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SERVICE 10: DATA INSIGHTS ===== -->
+		<section
+			id="service-data"
+			class="service-detail-section"
+			data-color="#ff851b"
+		>
+			<div class="container">
+				<div class="service-detail-content right-image">
+					<div class="service-detail-text">
+						<h2 style="color: #ff851b">Data Insights</h2>
+						<p>
+							Turn messy data into clear decisions. We build dashboards and reports
+							that show exactly what's working and where to find your next customer.
+						</p>
+						<ul class="service-features" data-check-color="#ff851b">
+							<li>Dashboard design & setup</li>
+							<li>Data integration & cleaning</li>
+							<li>KPI tracking & analysis</li>
+							<li>Actionable insights & recommendations</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#ff851b"
+							>Get Insights</a
+						>
+					</div>
+					<div class="service-detail-visual">
+						<div class="service-visual-placeholder animate-on-scroll">
+							<i
+								class="bi bi-bar-chart-line"
+								style="font-size: 14rem; color: #ff851b"
+							></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SERVICE 11: SMART CHATBOTS ===== -->
+		<section
+			id="service-chatbots"
+			class="service-detail-section"
+			data-color="#0d1b2a"
+		>
+			<div class="container">
+				<div class="service-detail-content left-image">
+					<div class="service-detail-visual">
+						<div
+							class="service-visual-placeholder animate-on-scroll with-background"
+							style="background: linear-gradient(135deg, #0d1b2a, #162739)"
+						>
+							<i class="bi bi-robot" style="font-size: 14rem; color: white"></i>
+						</div>
+					</div>
+					<div class="service-detail-text">
+						<h2 style="color: #0d1b2a">Smart Chatbots</h2>
+						<p>
+							24/7 customer support that actually sounds like your brand. Custom
+							chatbots that handle FAQs, lead capture, and customer service while you
+							sleep.
+						</p>
+						<ul class="service-features" data-check-color="#0d1b2a">
+							<li>Custom AI chatbot development</li>
+							<li>Multi-channel integration</li>
+							<li>24/7 availability & response</li>
+							<li>Lead capture & routing</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#0d1b2a"
+							>Build a Bot</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== SERVICE 12: FUTURE-PROOFING ===== -->
+		<section
+			id="service-future"
+			class="service-detail-section"
+			data-color="#48c9b0"
+		>
+			<div class="container">
+				<div class="service-detail-content right-image">
+					<div class="service-detail-text">
+						<h2 style="color: #48c9b0">Future-Proofing</h2>
+						<p>
+							Stay ahead of the curve. Big-picture strategy advice that keeps your
+							brand and business competitive as technology and markets evolve.
+						</p>
+						<ul class="service-features" data-check-color="#48c9b0">
+							<li>Tech trend analysis & guidance</li>
+							<li>Strategic planning sessions</li>
+							<li>Competitive intelligence</li>
+							<li>Long-term roadmap development</li>
+						</ul>
+						<a
+							href="#contact"
+							class="cta-button service-button"
+							data-hover-color="#48c9b0"
+							>Plan Ahead</a
+						>
+					</div>
+					<div class="service-detail-visual">
+						<div
+							class="service-visual-placeholder animate-on-scroll with-background"
+							style="background: linear-gradient(135deg, #48c9b0, #3ab39a)"
+						>
+							<i
+								class="bi bi-rocket-takeoff"
+								style="font-size: 14rem; color: white"
+							></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== FOOTER SECTION ===== -->
+		<div id="footer"></div>
+
+		<!-- ===== SCRIPTS ===== -->
 		<script>
 			// Smooth scroll for navigation links
 			document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
@@ -269,27 +510,89 @@
 			});
 
 			// Form submission handling
-			document
-				.querySelector(".contact-form")
-				.addEventListener("submit", function (e) {
+			const contactForm = document.querySelector(".contact-form");
+			if (contactForm) {
+				contactForm.addEventListener("submit", function (e) {
 					e.preventDefault();
 					alert("Thank you for your message! We'll get back to you soon.");
 					this.reset();
 				});
+			}
 
 			// Add scroll effect to navbar
 			window.addEventListener("scroll", function () {
 				const nav = document.querySelector("nav");
-				if (window.scrollY > 100) {
-					nav.style.boxShadow = "0 4px 20px rgba(0,0,0,0.15)";
-				} else {
-					nav.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
+				if (nav) {
+					if (window.scrollY > 100) {
+						nav.style.boxShadow = "0 4px 20px rgba(0,0,0,0.15)";
+					} else {
+						nav.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
+					}
 				}
 			});
+
+			// Scroll animation for service visuals
+			const observerOptions = {
+				threshold: 0.2,
+				rootMargin: "0px 0px -50px 0px",
+			};
+
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add("animated");
+					}
+				});
+			}, observerOptions);
+
+			document.querySelectorAll(".animate-on-scroll").forEach((element) => {
+				observer.observe(element);
+			});
+
+			// Apply custom CSS properties for checkmark colors and button hover colors
+			document
+				.querySelectorAll(".service-features[data-check-color]")
+				.forEach((list) => {
+					const color = list.getAttribute("data-check-color");
+					list.style.setProperty("--check-color", color);
+				});
+
+			document
+				.querySelectorAll(".service-button[data-hover-color]")
+				.forEach((button) => {
+					const color = button.getAttribute("data-hover-color");
+					button.style.setProperty("--hover-color", color);
+				});
 		</script>
 		<!-- ===== <<< SCRIPTS <<< ===== -->
-	</body>
-</html>
-   
+		<!-- ===== >>> NAVBAR INCLUDE >>> ===== -->
+		<script>
+			fetch("-navbar.html")
+				.then((response) => response.text())
+				.then((html) => {
+					const navbar = document.getElementById("navbar");
+					if (navbar) {
+						navbar.innerHTML = html;
+					}
+				})
+				.catch((error) => {
+					console.error("Navbar load failed:", error);
+				});
+		</script>
+
+		<!-- ===== >>> FOOTER INCLUDE >>> ===== -->
+		<script>
+			fetch("-footer.html")
+				.then((response) => response.text())
+				.then((html) => {
+					const footer = document.getElementById("footer");
+					if (footer) {
+						footer.innerHTML = html;
+					}
+				})
+				.catch((error) => {
+					console.error("Footer load failed:", error);
+				});
+		</script>
 	</body>
 </html>

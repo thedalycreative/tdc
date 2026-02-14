@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!--===== HEAD TAGS =====-->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--Page Title-->
+		<title>Contact | The Daly Creative</title>
+		<!--Description-->
+		<meta
+			name="description"
+			content="Get in touch with The Daly Creative. Tell us about your project and let's build something extraordinary together."
+		/>
+		<!--Favicon-->
+		<link rel="icon" type="image/png" href="/logos/tdc-icon 256x256.png" />
+		<!--Bootstrap Icons-->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+		/>
+		<!--Leaflet CSS-->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+			integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+			crossorigin=""
+		/>
+		<!--Main Stylesheet-->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<!-- ===== NAV BAR ===== -->
+		<div id="navbar"></div>
+
+		<!-- ===== CONTACT HERO SECTION ===== -->
+		<section class="hero hero-half">
+			<div class="hero-content">
+				<h1>Let's Create Something Extraordinary</h1>
+				<p>Ready to bring your vision to life? We're here to help you grow.</p>
+			</div>
+		</section>
+
+		<!-- ===== CONTACT CONTENT SECTION ===== -->
+		<section class="contact-section">
+			<div class="container">
+				<div class="contact-grid">
+					<!-- Contact Info Column -->
+					<div class="contact-info">
+						<h2>Get in Touch</h2>
+						<p class="contact-intro">
+							Whether you're starting from scratch or looking to level up, let's talk
+							about how we can help you achieve your goals.
+						</p>
+
+						<div class="contact-methods">
+							<div class="contact-method">
+								<i class="bi bi-envelope-fill"></i>
+								<div>
+									<h3>Email</h3>
+									<a href="mailto:hello@thedalycreative.com"
+										>hello@thedalycreative.com</a
+									>
+								</div>
+							</div>
+
+							<div class="contact-method">
+								<i class="bi bi-telephone-fill"></i>
+								<div>
+									<h3>Phone</h3>
+									<a href="tel:+61414265050">+61 414 265 050</a>
+								</div>
+							</div>
+
+							<div class="contact-method">
+								<i class="bi bi-geo-alt-fill"></i>
+								<div>
+									<h3>Location</h3>
+									<p>Fremantle / Perth, Western Australia</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Map Section -->
+
+						<div
+							class="contact-map"
+							style="border: 2px solid black; border-radius: 20px"
+						>
+							<div
+								id="fremantle-map"
+								class="map-frame"
+								aria-label="Map showing Fremantle, Western Australia"
+							></div>
+							<p class="map-attribution">Map data © OpenStreetMap contributors</p>
+						</div>
+					</div>
+
+					<!-- Contact Form Column -->
+					<div class="contact-form-wrapper">
+						<h2>Start a Conversation</h2>
+						<form class="contact-form">
+							<div class="form-group">
+								<label for="name">Your Name</label>
+								<input
+									type="text"
+									id="name"
+									name="name"
+									placeholder="Sharon Strzelecki"
+								/>
+							</div>
+							<div class="form-group">
+								<label for="email">Email Address</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									placeholder="shaz@fountain-lakes.com.au"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label for="phone">Phone Number (Optional)</label>
+								<input type="tel" id="phone" name="phone" placeholder="0419 123 456" />
+							</div>
+
+							<div class="form-group">
+								<label for="service">Which service are you interested in?</label>
+								<select id="service" name="service">
+									<option value="">Select a service</option>
+									<option value="web-dev">Custom Website Development</option>
+									<option value="branding">Strategic Branding & Identity</option>
+									<option value="seo">SEO & Local Visibility</option>
+									<option value="support">Grow & Support Plan</option>
+									<option value="training">Training & Empowerment</option>
+									<option value="ads">Managed Ad Campaigns</option>
+									<option value="ai-strategy">AI Strategy & Navigation</option>
+									<option value="automation">Workflow Automation</option>
+									<option value="content">AI Content Support</option>
+									<option value="data">Data Insights</option>
+									<option value="chatbots">Smart Chatbots</option>
+									<option value="future">Future-Proofing</option>
+									<option value="multiple">Multiple Services</option>
+									<option value="not-sure">Not Sure Yet</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="message">Tell us about your project</label>
+								<textarea
+									id="message"
+									name="message"
+									placeholder="Look at moy, look at moy, look at moy... I need a website that's noice, different, unusual!"
+								></textarea>
+							</div>
+
+							<button type="submit" class="cta-button">
+								<i class="bi bi-send-fill"></i> Send Message
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== FOOTER SECTION ===== -->
+		<div id="footer"></div>
+
+		<!-- ===== MAP LIBRARY ===== -->
+		<script
+			src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+			integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+			crossorigin=""
+		></script>
+
+		<!-- ===== SCRIPTS ===== -->
+		<script>
+			// Wait for DOM to be fully loaded
+			document.addEventListener("DOMContentLoaded", function () {
+				// Initialize Fremantle map (no controls)
+				var mapElement = document.getElementById("fremantle-map");
+				if (mapElement && window.L) {
+					var map = L.map(mapElement, {
+						zoomControl: false,
+						attributionControl: false,
+						dragging: false,
+						scrollWheelZoom: false,
+						doubleClickZoom: false,
+						boxZoom: false,
+						keyboard: false,
+						tap: false,
+						touchZoom: false,
+					});
+					L.tileLayer(
+						"https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png",
+						{
+							maxZoom: 18,
+						},
+					).addTo(map);
+					var bounds = [
+						[-33.33, 115.45],
+						[-31.74, 116.2],
+					];
+					map.fitBounds(bounds, { padding: [20, 20] });
+					L.marker([-32.0569, 115.747]).addTo(map);
+				}
+
+				// Form submission handling
+				const contactForm = document.querySelector(".contact-form");
+				if (contactForm) {
+					contactForm.addEventListener("submit", function (e) {
+						e.preventDefault();
+						alert("Thank you for your message! We'll get back to you soon.");
+						this.reset();
+					});
+				}
+
+				// Add scroll effect to navbar
+				window.addEventListener("scroll", function () {
+					const nav = document.querySelector("nav");
+					if (nav) {
+						if (window.scrollY > 100) {
+							nav.style.boxShadow = "0 4px 20px rgba(0,0,0,0.15)";
+						} else {
+							nav.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
+						}
+					}
+				});
+			});
+		</script>
+
+		<!-- ===== NAVBAR INCLUDE ===== -->
+		<script>
+			fetch("-navbar.html")
+				.then((response) => response.text())
+				.then((html) => {
+					const navbar = document.getElementById("navbar");
+					if (navbar) {
+						navbar.innerHTML = html;
+					}
+				})
+				.catch((error) => {
+					console.error("Navbar load failed:", error);
+				});
+		</script>
+
+		<!-- ===== FOOTER INCLUDE ===== -->
+		<script>
+			fetch("-footer.html")
+				.then((response) => response.text())
+				.then((html) => {
+					const footer = document.getElementById("footer");
+					if (footer) {
+						footer.innerHTML = html;
+					}
+				})
+				.catch((error) => {
+					console.error("Footer load failed:", error);
+				});
+		</script>
+	</body>
+</html>

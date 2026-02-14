@@ -1,46 +1,31 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- ===== >>> DOCUMENT ENCODING >>> ===== -->
+		<!--===== HEAD TAGS =====-->
 		<meta charset="UTF-8" />
-		<!-- ===== >>> RESPONSIVE VIEWPORT >>> ===== -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- ===== >>> PAGE TITLE >>> ===== -->
-		<title>The Daly Creative | Creative Strategy Meets Smart Automation</title>
-		<!-- ===== >>> META DESCRIPTION >>> ===== -->
+		<!--Page Title-->
+		<title>About | The Daly Creative</title>
+		<!--Description-->
 		<meta
 			name="description"
 			content="We help brands grow through design, tech, and tools that think with you. Brand identity, web development, AI tools, and market research."
 		/>
-		<!-- ===== >>> FAVICON >>> ===== -->
-		<link rel="icon" type="image/png" href="logos/TDC Flavicon 2.png" />
-		<!-- ===== >>> ICONS STYLESHEET >>> ===== -->
+		<!--Favicon-->
+		<link rel="icon" type="image/png" href="/logos/tdc-icon 256x256.png" />
+		<!--Bootstrap Icons-->
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
 		/>
-		<!-- ===== >>> MAIN STYLESHEET >>> ===== -->
+		<!--Main Stylesheet-->
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<!-- ===== >>> NAVIGATION >>> ===== -->
-		<nav>
-			<div class="nav-container">
-				<a href="#home" class="logo">
-					<img src="logos/TDC Dual Logo.png" alt="The Daly Creative" />
-				</a>
-				<ul class="nav-links">
-					<li><a href="#services">Services</a></li>
-					<li><a href="#ai-tools">AI Tools</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#work">Work</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-		<!-- ===== <<< NAVIGATION <<< ===== -->
+		<!-- ===== NAV BAR ===== -->
+		<div id="navbar"></div>
 
-		<!-- ===================== >>> ABOUT SECTION >>> ===================== -->
+		<!-- ===== ABOUT SECTION ===== -->
 		<section id="about" class="about-preview" style="height: 100vh">
 			<div
 				class="container"
@@ -64,103 +49,306 @@
 			</div>
 		</section>
 
+		<!-- ===== MEET THE TEAM SECTION ===== -->
+		<section class="meet-team-section">
+			<div class="container">
+				<div class="section-header">
+					<h2>
+						Meet the
+						<span style="text-decoration: line-through; opacity: 0.4">Team</span> Tim
+					</h2>
+					<p>The brain behind The Daly Creative</p>
+				</div>
+
+				<div class="team-member-detail">
+					<div class="team-member-visual">
+						<img
+							src="images/tim-tdc.jpeg"
+							alt="Tim Daly - Founder of The Daly Creative"
+							class="team-photo"
+						/>
+					</div>
+					<div class="team-member-text">
+						<h3>Tim Daly</h3>
+						<p class="team-role">Founder & Creative Strategist</p>
+
+						<p class="team-bio">
+							Tim is a multi-disciplinary creative who lives at the intersection of
+							design, technology, and strategy. With a background in brand development,
+							web design, and AI automation, he founded The Daly Creative to help
+							businesses cut through the noise and build systems that actually work.
+						</p>
+
+						<p class="team-bio">
+							What sets Tim apart? He doesn't just build websites or design logos—he
+							creates intelligent systems that grow with your business. From custom AI
+							agents to full-stack brand identities, Tim believes in empowering clients
+							with tools and knowledge, not just deliverables.
+						</p>
+
+						<p class="team-bio">
+							As a neurodivergent creative, Tim understands the importance of clear
+							communication, structured workflows, and accessible design. His approach
+							is collaborative, transparent, and focused on long-term success rather
+							than quick wins.
+						</p>
+
+						<p class="team-bio">
+							When he's not building brands or training AI models, you'll find Tim
+							exploring Perth's coffee scene, tinkering with new tech, or advocating
+							for more human-centered digital experiences.
+						</p>
+
+						<div class="team-skills">
+							<span class="skill-tag">Brand Strategy</span>
+							<span class="skill-tag">Web Development</span>
+							<span class="skill-tag">AI Automation</span>
+							<span class="skill-tag">UX Design</span>
+							<span class="skill-tag">Market Research</span>
+							<span class="skill-tag">Content Systems</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ===== EXPERIENCE & CREDENTIALS SECTION ===== -->
+		<section class="cv-section">
+			<div class="container">
+				<div class="section-header">
+					<h2>Experience & Credentials</h2>
+					<p>A track record of creative solutions and strategic thinking</p>
+				</div>
+
+				<div class="cv-timeline">
+					<!-- Timeline Item 1 -->
+					<div class="cv-item">
+						<div class="cv-line-connector"></div>
+						<div class="cv-content">
+							<h3>Chief of Everything</h3>
+							<p class="cv-company">The Daly Creative</p>
+							<p class="cv-date">February 2025 - Present</p>
+							<p class="cv-description">
+								Freelance studio focused on helping Perth businesses grow smarter
+								through web development, digital marketing and AI-informed strategy.
+								Design and build responsive websites and landing pages, develop content
+								and brand assets aligned with client goals, and advise on data-informed
+								marketing and practical AI use in small business workflows.
+							</p>
+						</div>
+					</div>
+
+					<!-- Timeline Item 2 -->
+					<div class="cv-item">
+						<div class="cv-line-connector"></div>
+						<div class="cv-content">
+							<h3>Technology Administrator</h3>
+							<p class="cv-company">Department of Transport, Western Australia</p>
+							<p class="cv-date">June 2024 - January 2025</p>
+							<p class="cv-description">
+								Supported People and Culture technology systems, including payroll and
+								online training platforms, with a focus on process improvement and
+								automation. Streamlined online training update processes, reducing
+								processing time by approximately 20%. Acted as second-in-charge in a
+								six-person team, providing technical guidance and maintaining
+								relationships with executive stakeholders.
+							</p>
+						</div>
+					</div>
+
+					<!-- Timeline Item 3 -->
+					<div class="cv-item">
+						<div class="cv-line-connector"></div>
+						<div class="cv-content">
+							<h3>Court Technology and Resource Officer</h3>
+							<p class="cv-company">Supreme Court of Western Australia</p>
+							<p class="cv-date">July 2023 - May 2024</p>
+							<p class="cv-description">
+								Delivered and supported technology that underpins the operations of the
+								Supreme Court, balancing innovation with the expectations of the
+								judicial environment. Led the development and launch of the Court's
+								intranet, improving internal communication and access to resources.
+								Modernised courtroom booking with an integrated digital calendar system
+								that replaced manual processes.
+							</p>
+						</div>
+					</div>
+
+					<!-- Timeline Item 4 -->
+					<div class="cv-item">
+						<div class="cv-line-connector"></div>
+						<div class="cv-content">
+							<h3>Court Support Officer</h3>
+							<p class="cv-company">District Court of Western Australia</p>
+							<p class="cv-date">November 2022 - July 2023</p>
+							<p class="cv-description">
+								Managed civil subpoena processing and storage, providing client-facing
+								support while maintaining high standards of confidentiality and
+								accuracy. Streamlined handling and security of civil subpoenas to
+								reinforce procedural integrity.
+							</p>
+						</div>
+					</div>
+
+					<!-- Timeline Item 5 -->
+					<div class="cv-item">
+						<div class="cv-line-connector"></div>
+						<div class="cv-content">
+							<h3>Resident Support Officer / Team Leader</h3>
+							<p class="cv-company">COVID-19 Quarantine Victoria</p>
+							<p class="cv-date">December 2020 - April 2022</p>
+							<p class="cv-description">
+								Led a large team of resident support officers in hotel quarantine,
+								ensuring safe and consistent operations during the pandemic. Provided
+								calm leadership, rostering and resource management under constant
+								change. Supported staff wellbeing while maintaining operational
+								standards and compliance.
+							</p>
+						</div>
+					</div>
+
+					<!-- Timeline Item 6 -->
+					<div class="cv-item">
+						<div class="cv-line-connector"></div>
+						<div class="cv-content">
+							<h3>Digital Solutions Specialist</h3>
+							<p class="cv-company">White Pages Australia / Sensis</p>
+							<p class="cv-date">November 2018 - October 2020</p>
+							<p class="cv-description">
+								Exceeded sales and customer satisfaction targets while improving call
+								centre efficiency and digital product adoption. Provided consultative
+								support to small businesses seeking online visibility and marketing
+								solutions.
+							</p>
+						</div>
+					</div>
+
+					<!-- Timeline Item 7 -->
+					<div class="cv-item">
+						<div class="cv-line-connector"></div>
+						<div class="cv-content">
+							<h3>Flight Attendant (Cabin Crew)</h3>
+							<p class="cv-company">Jetstar Airways</p>
+							<p class="cv-date">March 2013 - February 2018</p>
+							<p class="cv-description">
+								Provided high-quality service and safety in a fast-paced, highly
+								regulated environment. Built resilience and people skills that underpin
+								current work in technology and projects.
+							</p>
+						</div>
+					</div>
+
+					<!-- Credentials -->
+					<div class="cv-credentials">
+						<h4>Education & Certifications</h4>
+						<div class="credentials-grid">
+							<div class="credential-badge">
+								<i class="bi bi-patch-check-fill"></i>
+								<div class="credential-text">
+									<span>Double Diploma of IT (Back End & Cyber Security)</span>
+									<strong>Equinim College</strong>
+									<span class="credential-date">2024-2025</span>
+								</div>
+							</div>
+							<div class="credential-badge">
+								<i class="bi bi-patch-check-fill"></i>
+								<div class="credential-text">
+									<span>Bachelor of Business Administration (Marketing)</span>
+									<strong>Torrens University Australia</strong>
+									<span class="credential-date">Currently completing</span>
+								</div>
+							</div>
+							<div class="credential-badge">
+								<i class="bi bi-patch-check-fill"></i>
+								<div class="credential-text">
+									<span>HTML, CSS & Responsive Design</span>
+								</div>
+							</div>
+							<div class="credential-badge">
+								<i class="bi bi-patch-check-fill"></i>
+								<div class="credential-text">
+									<span>JavaScript & Modern Web Development</span>
+								</div>
+							</div>
+							<div class="credential-badge">
+								<i class="bi bi-patch-check-fill"></i>
+								<div class="credential-text">
+									<span>Node.js, Express, MongoDB & REST APIs</span>
+								</div>
+							</div>
+							<div class="credential-badge">
+								<i class="bi bi-patch-check-fill"></i>
+								<div class="credential-text">
+									<span>Bootstrap & CSS Frameworks</span>
+								</div>
+							</div>
+							<div class="credential-badge">
+								<i class="bi bi-patch-check-fill"></i>
+								<div class="credential-text">
+									<span>Git, GitHub & Version Control</span>
+								</div>
+							</div>
+							<div class="credential-badge">
+								<i class="bi bi-patch-check-fill"></i>
+								<div class="credential-text">
+									<span>VS Code & Development Tools</span>
+								</div>
+							</div>
+							<div class="credential-badge">
+								<i class="bi bi-patch-check-fill"></i>
+								<div class="credential-text">
+									<span>Microsoft 365, Azure AD & Enterprise Systems</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- ===================== >>> FINAL CTA SECTION >>> ===================== -->
-		<section class="final-cta">
+		<section class="final-cta about-cta">
 			<div class="container text-center">
 				<h2 class="final-cta-title">Ready to Grow?</h2>
 				<p class="final-cta-text">Let's build something extraordinary together.</p>
-				<a href="#contact" class="cta-button final-cta-button"
+				<a href="contact.html" class="cta-button final-cta-button"
 					>Start Your Project</a
 				>
 			</div>
 		</section>
-		<!-- ===================== >>> CONTACT SECTION >>> ===================== -->
-		<section id="contact" class="contact">
-			<div class="container">
-				<div class="section-header">
-					<h2>Let's Talk</h2>
-					<p>Tell us about your goals and we'll show you how we can help</p>
-				</div>
-				<form class="contact-form">
-					<div class="form-group">
-						<label for="name">Your Name</label>
-						<input type="text" id="name" name="name" required />
-					</div>
-					<div class="form-group">
-						<label for="email">Email Address</label>
-						<input type="email" id="email" name="email" required />
-					</div>
-					<div class="form-group">
-						<label for="service">What are you interested in?</label>
-						<select id="service" name="service" required>
-							<option value="">Select a service</option>
-							<option value="branding">Brand Identity</option>
-							<option value="web">Web Design & Development</option>
-							<option value="ai">AI Business Tools</option>
-							<option value="research">Market Research</option>
-							<option value="multiple">Multiple Services</option>
-							<option value="not-sure">Not Sure Yet</option>
-						</select>
-					</div>
-					<div class="form-group">
-						<label for="message">Tell us about your project</label>
-						<textarea
-							id="message"
-							name="message"
-							placeholder="What are your goals? What challenges are you facing?"
-							required
-						></textarea>
-					</div>
-					<button type="submit" class="submit-button">Send Message</button>
-				</form>
-			</div>
-		</section>
-		<!-- ===================== <<< CONTACT SECTION <<< ===================== -->
 
-		<!-- ===== >>> FOOTER >>> ===== -->
-		<footer>
-			<div class="footer-content">
-				<div class="footer-section">
-					<h3>The Daly Creative</h3>
-					<p>
-						Creative strategy meets smart automation. We help brands grow through
-						design, tech, and tools that think with you.
-					</p>
-				</div>
-				<div class="footer-section">
-					<h3>Services</h3>
-					<ul>
-						<li><a href="#services">Brand Identity</a></li>
-						<li><a href="#services">Web Development</a></li>
-						<li><a href="#ai-tools">AI Business Tools</a></li>
-						<li><a href="#services">Market Research</a></li>
-					</ul>
-				</div>
-				<div class="footer-section">
-					<h3>Company</h3>
-					<ul>
-						<li><a href="#about">About Us</a></li>
-						<li><a href="#work">Our Work</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-				<div class="footer-section">
-					<h3>Connect</h3>
-					<ul>
-						<li><a href="#">LinkedIn</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Instagram</a></li>
-						<li>
-							<a href="mailto:hello@thedaly.creative">hello@thedaly.creative</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer-bottom">
-				<p>&copy; 2026 The Daly Creative. All rights reserved.</p>
-			</div>
-		</footer>
-		<!-- ===== <<< FOOTER <<< ===== -->
+		<!-- ===== FOOTER SECTION ===== -->
+		<div id="footer"></div>
+
+		<!-- ===== >>> NAVBAR INCLUDE >>> ===== -->
+		<script>
+			fetch("-navbar.html")
+				.then((response) => response.text())
+				.then((html) => {
+					const navbar = document.getElementById("navbar");
+					if (navbar) {
+						navbar.innerHTML = html;
+					}
+				})
+				.catch((error) => {
+					console.error("Navbar load failed:", error);
+				});
+		</script>
+
+		<!-- ===== >>> FOOTER INCLUDE >>> ===== -->
+		<script>
+			fetch("-footer.html")
+				.then((response) => response.text())
+				.then((html) => {
+					const footer = document.getElementById("footer");
+					if (footer) {
+						footer.innerHTML = html;
+					}
+				})
+				.catch((error) => {
+					console.error("Footer load failed:", error);
+				});
+		</script>
 
 		<!-- ===== >>> SCRIPTS >>> ===== -->
 		<script>
@@ -187,6 +375,9 @@
 			// Add scroll effect to navbar
 			window.addEventListener("scroll", function () {
 				const nav = document.querySelector("nav");
+				if (!nav) {
+					return;
+				}
 				if (window.scrollY > 100) {
 					nav.style.boxShadow = "0 4px 20px rgba(0,0,0,0.15)";
 				} else {
