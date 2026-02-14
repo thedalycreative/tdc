@@ -124,7 +124,7 @@ nav {
 .hero {
 	background:
 		linear-gradient(120deg, rgba(15, 29, 45, 0.9), rgba(15, 29, 45, 0.65)),
-		url("images/tdc-hero-full.png") center/cover no-repeat;
+		url("images/tdc-hero-shapes-full.png") center/cover no-repeat;
 	background-attachment: fixed;
 	color: var(--cream);
 	min-height: 100vh;
@@ -562,7 +562,7 @@ section {
 .testimonials-section {
 	background:
 		linear-gradient(180deg, rgba(15, 29, 45, 0.8), rgba(15, 29, 45, 0.7)),
-		url("images/tdc-hero-full.png") center/cover no-repeat;
+		url("images/tdc-hero-shapes-full.png") center/cover no-repeat;
 	background-attachment: fixed;
 	min-height: 100vh;
 	min-height: 100svh;
@@ -1138,7 +1138,7 @@ section {
 .about-cta {
 	background:
 		linear-gradient(120deg, rgba(15, 29, 45, 0.9), rgba(15, 29, 45, 0.65)),
-		url("images/tdc-hero-full.png") center/cover no-repeat;
+		url("images/tdc-hero-shapes-full.png") center/cover no-repeat;
 	background-attachment: fixed;
 	min-height: 60vh;
 	min-height: 60svh;
